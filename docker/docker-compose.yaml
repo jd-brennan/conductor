@@ -57,7 +57,7 @@ services:
       test: [ "CMD", "redis-cli","ping" ]
 
   elasticsearch:
-    image: jazzdev/elasticsearch:6.8.15-arm
+    image: ghcr.io/jd-brennan/elasticsearch:6.8.15-arm
     container_name: elasticsearch
     environment:
       - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
